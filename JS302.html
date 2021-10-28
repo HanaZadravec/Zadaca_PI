@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let rijec = prompt("Upisi rijec:")
+        var brojac=0
+        const isti_znakovi = (rijec) => {
+            for(let i=0, j=1;j<=rijec.length;j++){
+                if(rijec[i]==rijec[j]){
+                 if(brojac < j-i +1){
+                     brojac=j-i+1
+                 }
+                }
+                else {
+                    i=j
+                }
+            }
+            return brojac
+        }
+        console.log(isti_znakovi(rijec))
+    </script>
+</body>
+</html>
